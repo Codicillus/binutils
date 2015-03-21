@@ -1,0 +1,2 @@
+#!/bin/sh
+fatsort -f /dev/sdc1 && echo "Sorting was a success!" | wall || echo "Sorting failed with error "$?"." | wall 

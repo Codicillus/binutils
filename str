@@ -1,0 +1,28 @@
+#!/bin/sh
+
+cmdvlc="vlc"
+
+  case $1 in
+    inter)
+      $cmdvlc http://www.tv-radio.com/station/france_inter_mp3/france_inter_mp3-128k.m3u
+    ;;
+    info)
+      $cmdvlc http://www.tv-radio.com/station/france_info/france_info.m3u
+    ;;
+    culture)
+      $cmdvlc http://www.tv-radio.com/station/france_culture_mp3/france_culture_mp3-128k.m3u
+    ;;
+    musique)
+      $cmdvlc http://www.tv-radio.com/station/france_musique_mp3/france_musique_mp3-128k.m3u
+    ;;
+    fip)
+      $cmdvlc http://www.tv-radio.com/station/fip_mp3/fip_mp3-128k.m3u
+    ;;
+    mouv)
+      $cmdvlc http://www.tv-radio.com/station/le_mouv_mp3/le_mouv_mp3-128k.m3u
+    ;;
+    *)
+      echo 'Station inconnue!'
+   ;;
+  esac 
+exit
